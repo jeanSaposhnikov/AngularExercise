@@ -1,5 +1,7 @@
 app.controller("controller", function($scope){
     $scope.clients = ['Robert','Celine','Azazel','Mick','Nicole', 'Ken'];
+    $scope.errorMail = 'the email is invalid';
+    $scope.errorPhone = 'the number is invalid';
     //$scope.price=quantity * 3;
 });
 

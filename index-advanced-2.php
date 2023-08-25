@@ -10,7 +10,7 @@
 
     <p>How many items you wish to buy ?</p>
     <input type="number" ng-model="quantity">
-    <p ng-show="quanitty">That would cost you price $ !</p>
+    <p ng-show="quantity">That would cost you price $ !</p>
 
     <p>Here is the list of targets :</p>
     <ul>
@@ -19,7 +19,21 @@
     </li>
     </ul>
 
-    <div blue></blue>
+
+    <form name="form">
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <label>Email:
+            <input type="email" name="email" ng-model="text">
+            <span ng-show="form.email.$error.email">{{errorMail}}</span>
+        </label>
+        <label>Phone
+            <input type="tel" name="phone" ng-model="tet">
+            <span ng-show="form.phone.$error.phone">{{errorPhone}}</span>
+        </label>
+    </form>
+
 
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
