@@ -12,6 +12,13 @@
     <input type="number" ng-model="quantity">
     <p>That would cost you {{price}} $ !</p>
 
+    <p>Here is the list of targets :</p>
+    <ul>
+    <li ng-repeat="x in clients">
+      {{ x }}
+    </li>
+    </ul>
+
 
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
