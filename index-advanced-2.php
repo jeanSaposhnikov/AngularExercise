@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body ng-app="app" ng-controller="controller" ng-init="price=0;quantity=0">
+<body ng-app="app" ng-controller="controller" ng-init="quantity=0; price=0">
     <p>Coolest Name : {{clients[2]}}</p>
     <input type="text" ng-model="color" backgroundColor>
 
