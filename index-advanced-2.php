@@ -6,11 +6,11 @@
     <input type="text" ng-model="color" backgroundColor>
 
     <p>What is your name ? :</p> <input type="text" ng-model="name">
-    <p>Nice to meet you {{name}} ! </p>
+    <p ng-show="name">Nice to meet you {{name}} ! </p>
 
     <p>How many items you wish to buy ?</p>
     <input type="number" ng-model="quantity">
-    <p>That would cost you {{price}} $ !</p>
+    <p ng-show="quanitty">That would cost you price $ !</p>
 
     <p>Here is the list of targets :</p>
     <ul>
@@ -19,6 +19,7 @@
     </li>
     </ul>
 
+    <div blue></blue>
 
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
