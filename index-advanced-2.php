@@ -10,13 +10,21 @@
 
     <p>How many items you wish to buy ?</p>
     <input type="number" ng-model="quantity">
-    <p ng-show="quantity">That would cost you price $ !</p>
+    <p ng-show="quantity">That would cost you {{3.5 * quantity}}  $ !</p>
 
-    <p>Here is the list of targets :</p>
+    <p>Here is the list of clients :</p>
     <ul>
     <li ng-repeat="x in clients">
       {{ x }}
     </li>
+    </ul>
+
+    <p>And here is a list of targets :</p>
+
+    <ul>
+        <li ng-repeat="x in targets">
+            {{ x.name + " from " + x.location }}
+        </li>
     </ul>
 
 
