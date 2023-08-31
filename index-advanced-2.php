@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body ng-app="app" ng-controller="controller" ng-init="quantity=0; price=0">
     <p>Coolest Name : {{clients[2]}}</p>
@@ -37,11 +41,12 @@
             <span ng-show="form.email.$error.email">{{errorMail}}</span>
         </label>
         <label>Phone
-            <input type="tel" name="phone" ng-model="tet">
+            <input type="tel" name="phone" ng-model="tel">
             <span ng-show="form.phone.$error.phone">{{errorPhone}}</span>
         </label>
-    </form>
 
+        <input type="text" name="test" ng-model="text">
+    </form>
 
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
