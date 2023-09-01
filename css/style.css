@@ -1,3 +1,16 @@
 input.ng-invalid{
     background-color: red;
 }
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+input[name="test"].ng-empty{
+    background-color: yellow;
+}
+
+input[name="test"].ng-not-empty{
+    background-color: blue;
+}

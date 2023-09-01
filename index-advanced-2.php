@@ -32,7 +32,8 @@
     </ul>
 
 
-    <form name="form">
+    <form class="flex-column" name="form">
+        <p ng-hide="test">Fill the fields below </p>
         <label>Name:
             <input type="text" name="name">
         </label>
@@ -41,11 +42,12 @@
             <span ng-show="form.email.$error.email">{{errorMail}}</span>
         </label>
         <label>Phone
-            <input type="tel" name="phone" ng-model="tel">
-            <span ng-show="form.phone.$error.phone">{{errorPhone}}</span>
+            <input type="tel" name="tel" ng-model="tel">
+            <span ng-show="form.tel.$error.tel">{{errorPhone}}</span>
         </label>
-
-        <input type="text" name="test" ng-model="text">
+        <label for="test">Test Field :
+            <input type="text" id="test" name="test" ng-model="test"><span ng-show="form.test.$touched">The field has been touched !</span>
+        </label>
     </form>
 
     <script src="js/app.js"></script>
