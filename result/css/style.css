@@ -1,0 +1,7 @@
+input[name="test"].empty{
+    background-color: yellow;
+}
+
+input[name="test"].not-empty{
+    background-color: blue;
+}
