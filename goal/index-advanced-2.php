@@ -38,9 +38,9 @@
             <input type="text" name="name">
         </label>
         <label>Email:
+        </label>
             <input type="email" name="email" ng-model="text">
             <span ng-show="form.email.$error.email">{{errorMail}}</span>
-        </label>
         <label>Phone
             <input type="tel" name="tel" ng-model="tel">
             <span ng-show="form.tel.$error.tel">{{errorPhone}}</span>

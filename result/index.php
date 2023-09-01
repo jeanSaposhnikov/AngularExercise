@@ -26,11 +26,18 @@
     </ul>
 
     <p>Fill the fields below</p>
-    <form>
-        <label>Name<input type="text" name="name"></label>
-        <label>Email<input type="text" name="email"></label><span ng-show="form.email.email.$invalid">The email is invalid</span>
-        <label>Phone<input type="text" name="tel"></label>
-        <label>Test Field :<input type="text" name="test"></label><span>The field has been touched !</span>
+    <form name="form">
+        <label>Name
+            <input type="text" name="name">
+        </label>
+        <label>Email
+            <input type="email" name="email" ng-model="text"></label>
+            <span ng-show="form.email.$error.email">{{"The email is invalid"}}</span>
+        <label>Phone
+            <input type="tel" name="tel"></label>
+        <label>Test Field :
+            <input type="text" name="test" ng-model="test"></label>
+            <span ng-show="form.test.$touched">The field has been touched !</span>
     </form>
 </body>
 </html>

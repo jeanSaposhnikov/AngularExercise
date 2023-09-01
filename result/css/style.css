@@ -1,7 +1,16 @@
-input[name="test"].empty{
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+input[name="email"].ng-invalid{
+    background-color: red;
+}
+
+input[name="test"].ng-empty{
     background-color: yellow;
 }
 
-input[name="test"].not-empty{
+input[name="test"].ng-not-empty{
     background-color: blue;
 }
