@@ -9,6 +9,9 @@ app.controller("controller", function($scope){
     $scope.errorMail = 'the email is invalid';
     $scope.errorPhone = 'the number is invalid';
     //$scope.price=quantity * 3;
+    $scope.eminem="marshall-matthews";
+    $scope.filterNames= [ "Jani", "Carl", "Margareth", "Hege", "Joe", "Gustav","Birgit","Mary","Kai"]
+
 });
 
 app.directive("backgroundColor", function(){

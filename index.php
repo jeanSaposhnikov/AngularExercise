@@ -14,7 +14,7 @@
 
     <p>How many items you wish to buy ?</p>
     <input type="number" ng-model="quantity">
-    <p ng-show="quantity">That would cost you {{3.5 * quantity}}  $ !</p>
+    <p id="anchor" ng-show="quantity">That would cost you {{3.5 * quantity | currency}} !</p>
 
     <p>Here is the list of clients :</p>
     <ul>
@@ -49,6 +49,28 @@
             <input type="text" id="test" name="test" ng-model="test"><span ng-show="form.test.$touched">The field has been touched !</span>
         </label>
     </form>
+
+    <hr>
+    <h2>Filters</h2>
+    <p ng-model="eminem">My name is {{eminem | uppercase}}
+
+    <p>Uppercase order :</p>
+    <ul>
+        <li ng-repeat="x in targets | orderBy:'name'">{{x.name}}</li>
+    </ul>
+    
+    <input type="button" value="Currency filter"></button>
+
+    <p>S filtered</p>
+    <ul>
+        <li ng-repeat="x in targets | filter : {'name' : 's'}">{{x.name}}</li>
+    </ul>
+
+    <input ng-model="filterInput" type="text">
+
+    <ul>
+        <li ng-repeat="x in filterNames | filter: filterInput">{{x}}</li>
+    </ul>
 
     <script src="js/app.js"></script>
     <script src="js/controller.js"></script>
